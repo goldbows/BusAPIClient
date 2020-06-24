@@ -13,7 +13,7 @@ class BusRestClient {
             // Construct manually a JSON object in Java, for testing purposes an object with an object
 
             Scanner sc= new Scanner(System.in);
-            System.out.print("Enter your request type (availability/ticket): ");
+            System.out.print("Enter your request type (availability or ticket): ");
 
             String requestType = sc.nextLine();
 
