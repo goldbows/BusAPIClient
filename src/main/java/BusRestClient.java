@@ -34,7 +34,7 @@ class BusRestClient {
                 String date = sc.nextLine();
                 data.put("scheduledDateStr", date);
 
-                url = new URL("http://localhost:8000/api/availability");
+                url = new URL("http://localhost:8080/api/availability");
             }
 
             if (requestType.equals("ticket")) {
@@ -55,7 +55,7 @@ class BusRestClient {
                 String price = sc.nextLine();
                 data.put("totalPrice", Integer.parseInt(price));
 
-                url = new URL("http://localhost:8000/api/createBooking");
+                url = new URL("http://localhost:8080/api/createBooking");
             }
 
             if (!requestType.equals("availability") && !requestType.equals("ticket")) {
